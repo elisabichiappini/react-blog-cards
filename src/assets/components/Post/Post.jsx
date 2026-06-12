@@ -8,7 +8,7 @@ const Post = ({ title, description, imgSrc, tags}) => {
             <div className="post" >
                
                 <figure >
-                    <img src={imgSrc} alt="Post image" className={postStyle['post-box']} />
+                    <img src={imgSrc || 'https://placehold.co/600x400'} alt="Post image" className={postStyle['post-box']} />
                 </figure>
                 <div className={postStyle.post}>
                     <h2 className={postStyle['pt-8']}>{title}</h2>
