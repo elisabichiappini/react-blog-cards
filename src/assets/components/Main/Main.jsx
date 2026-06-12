@@ -11,6 +11,7 @@ const Main = () => {
                     title={p.title} 
                     description={p.content} 
                     imgSrc={p.image} 
+                    tags={p.tags}
                     />
                 ))
             }

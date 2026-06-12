@@ -2,7 +2,7 @@ import postStyle from './Post.module.css';
 import Button from '../Button/Button';
 
 
-const Post = ({ title, description, imgSrc}) => {
+const Post = ({ title, description, imgSrc, tags}) => {
     return (
         <>
             <div className="post" >
@@ -15,7 +15,15 @@ const Post = ({ title, description, imgSrc}) => {
                     <p className={postStyle['pt-8']}>
                         {description}
                     </p>
-  
+                    <ul className={postStyle['tags']}>
+                        {
+                            tags.map((t,index) => (
+                                <li key={`tag-${index}`} className={`${postStyle['tag']} ${postStyle[`tag-${t}`]}`}>
+                                    {t}
+                                </li>
+                            ))
+                        }
+                    </ul>   
                     <Button />
                 </div>
             </div>

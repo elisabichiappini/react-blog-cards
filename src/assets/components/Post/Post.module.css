@@ -24,3 +24,35 @@
     text-transform: uppercase;
     font-weight: lighter;
 }
+
+.tags {
+    display:flex;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+}
+
+.tag {
+    background-color: var(--var-primary-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.tag-html {
+    background-color: #e34c26;
+    color: white;
+}
+
+.tag-css {
+    background-color: #264de4;
+    color: white;
+}
+.tag-js {
+    background-color: #f0db4f;
+    color: black;
+}
+.tag-php {
+    background-color: #86d286;
+    color: rgb(0, 0, 0);
+}
