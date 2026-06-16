@@ -19,10 +19,25 @@ button {
   all: unset;
 }
 
+li {
+  list-style: none;
+}
+
 .d-flex {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gap-8 {
+  gap: 8px;
+}
 .align-items-center {
   align-items: center;
 }
@@ -37,4 +52,3 @@ button {
 .flex-wrap {
   flex-wrap: wrap;
 }
-

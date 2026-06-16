@@ -1,5 +1,7 @@
 import Post from '../Post/Post';
+import './Main.css';
 import { posts } from '../../utils/posts';
+
 
 export default function Main() {
     const uniqueTags = posts.reduce((acc, post) => {
@@ -13,31 +15,37 @@ export default function Main() {
     }, []);
 
     return (
-        <main className="info">
-            <h3 >All tags</h3>
-            <div className="tags">
-                {uniqueTags.map((tag, index) => (
-                    <span
-                        key={`allTag-${index}`}
-                        className={`tag ${tag}`}
-                    >
-                        {tag}
-                    </span>
-                ))}
-            </div>
+        <main>
+            <div className="info d-flex flex-column justify-content-center align-items-center">
+                <div className="labels text-center">
+                    <h3 >All tags</h3>
+                    <div className="tags d-flex justify-content-center align-items-center gap-8">
+                        {uniqueTags.map((tag, index) => (
+                            <span
+                                key={`allTag-${index}`}
+                                className={`tag ${tag}`}
+                            >
+                                {tag}
+                            </span>
+                        ))}
+                    </div>
+                </div>
 
-            {posts.map(
-                (p) =>
-                    p.published === true && (
-                        <Post
-                            key={`post-${p.id}`}
-                            title={p.title}
-                            description={p.content}
-                            imgSrc={p.image}
-                            tags={p.tags}
-                        />
-                    )
-            )}
+                <div>
+                    {posts.map(
+                        (p) =>
+                            p.published === true && (
+                                <Post
+                                    key={`post-${p.id}`}
+                                    title={p.title}
+                                    description={p.content}
+                                    imgSrc={p.image}
+                                    tags={p.tags}
+                                />
+                            )
+                    )}
+                </div>
+            </div>
         </main>
     );
 }
