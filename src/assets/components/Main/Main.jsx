@@ -1,6 +1,8 @@
 import Post from '../Post/Post';
 import './Main.css';
 import { posts } from '../../utils/posts';
+import StylePost from '../Post/Post.module.css';
+
 
 
 export default function Main() {
@@ -19,11 +21,11 @@ export default function Main() {
             <div className="info d-flex flex-column justify-content-center align-items-center">
                 <div className="labels text-center">
                     <h3 >All tags</h3>
-                    <div className="tags d-flex justify-content-center align-items-center gap-8">
+                    <div className={`${StylePost['tags']} gap-8`}>
                         {uniqueTags.map((tag, index) => (
                             <span
                                 key={`allTag-${index}`}
-                                className={`tag ${tag}`}
+                                className={StylePost['tag'] + ' ' + StylePost[`tag-${tag}`] + ' ' + 'gap-16'}
                             >
                                 {tag}
                             </span>

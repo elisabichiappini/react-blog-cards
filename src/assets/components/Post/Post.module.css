@@ -11,6 +11,7 @@
     width: 600px;
     border-radius: 8px 8px 0 0;
 }
+
 .post-image {
     width: 100%;
     display: block;
@@ -23,4 +24,32 @@
 .text-btn {
     text-transform: uppercase;
     font-weight: lighter;
+}
+
+.tags {
+    display: flex;
+    padding: 16px 0;
+}
+.tag {
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+.tag-css {
+    background-color: rgb(235, 79, 79);
+    color: rgb(100, 5, 5);
+}
+
+.tag-html {
+    background-color: blue;
+    color: rgb(161, 161, 234);
+}
+
+.tag-js {
+    background-color: rgb(255, 130, 13);
+    color: rgb(235, 194, 133);
+}
+
+.tag-php {
+    background-color: yellow;
+    color: rgb(161, 153, 0);
 }
