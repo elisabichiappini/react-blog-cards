@@ -15,7 +15,7 @@ const Post = ({ title, description, imgSrc, tags}) => {
                     <p className={postStyle['pt-8']}>
                         {description}
                     </p>
-                    <ul className={postStyle['tags gap-8']}>
+                    <ul className={`${postStyle['tags']} gap-8 pb-0`}>
                         {
                             tags.map((t,index) => (
                                 <li key={`tag-${index}`} className={`${postStyle['tag']} ${postStyle[`tag-${t}`]}`}>

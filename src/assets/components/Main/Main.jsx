@@ -4,7 +4,6 @@ import { posts } from '../../utils/posts';
 import StylePost from '../Post/Post.module.css';
 
 
-
 export default function Main() {
     const uniqueTags = posts.reduce((acc, post) => {
         post.tags.forEach((tag) => {
@@ -33,7 +32,7 @@ export default function Main() {
                     </div>
                 </div>
 
-                <div>
+                <div class="d-flex flex-wrap justify-content-center gap-16 pt-16">
                     {posts.map(
                         (p) =>
                             p.published === true && (

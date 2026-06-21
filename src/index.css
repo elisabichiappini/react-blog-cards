@@ -43,6 +43,10 @@ li {
   gap: 16px;
 }
 
+.pb-0 {
+  padding-bottom: 0;
+}
+
 .align-items-center {
   align-items: center;
 }
