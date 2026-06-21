@@ -1,9 +1,9 @@
 .btn-primary {
-    background-color: rgb(213, 161, 30);
+    background-color: rgb(17, 63, 28);
     padding: 8px 16px;
     border-radius: 4px;
     text-transform: uppercase;
-    color: white;
+    color: rgb(188, 233, 185);
     margin-top: 16px;
     font-weight: lighter;
 }
